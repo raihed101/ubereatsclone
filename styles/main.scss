@@ -1,0 +1,107 @@
+:root{
+    --font-family:sans-serif;
+    font-size: 16px;
+    --color-green:#06c167;
+    --color-grey:rgb(238,238,238);
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: calc(100% - 120px);
+    margin: auto;
+}
+
+header{
+    .logo{
+        h1{font-weight: 400;
+        }
+        span{
+            color: var(--color-green);
+            font-weight: 600;
+        }
+    }
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    .searchBar{
+        margin-left: auto;
+    }
+    display: flex;
+    flex-direction: row ;
+    .header-options{
+        font-size: 0.8rem;
+        padding-left: 3rem;
+    }
+    .details, .searchBar{
+        display: flex;
+
+    }
+}
+    .options{
+        padding: 1.2rem 0;
+        .options-btn{
+            background-color: var(--color-grey);
+            padding: 0.7rem;
+            border-radius: 30px;
+            border: 0;
+            font-size: 1rem;
+            font-family:var(--font-family) ;
+            letter-spacing: 0.6px;
+            &.selected{
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+
+    .listings{
+        .header{
+            display:flex;
+            align-items: center;
+            .header-title{
+                h2{
+                    font-weight: 400 ;
+                    font-size: 1.8rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+            .header-viewOptions{
+                margin-left:auto;
+                display: flex;
+                align-items: center;
+                .viewAll{
+                    color: var(--color-green);
+                    padding-right: 2rem;
+                }
+                .viewMore{
+                    .arrow{
+                        width: 40px;
+                        height: 40px;
+                        background: red;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        background-color: var(--color-grey);
+                        opacity: 0.3;
+                        transition: all 0.2s ease-in-out;
+                        cursor: pointer;
+                        &.darker,
+                        &:hover{
+                            opacity:1;
+                        }
+                    }
+                }
+            }
+        }
+    }
