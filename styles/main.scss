@@ -3,6 +3,7 @@
     font-size: 16px;
     --color-green:#06c167;
     --color-grey:rgb(238,238,238);
+    --color-greyDarker:rgb(85, 85, 85);
 }
 
 
@@ -10,7 +11,12 @@
     box-sizing: border-box;
 }
 
-body{
+.smallText{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+body{ 
     margin: 0;
     font-family: sans-serif;
 }
@@ -79,6 +85,7 @@ header{
                 margin-left:auto;
                 display: flex;
                 align-items: center;
+                margin: auto 0 auto auto;
                 .viewAll{
                     color: var(--color-green);
                     padding-right: 2rem;
@@ -100,6 +107,61 @@ header{
                         &:hover{
                             opacity:1;
                         }
+                    }
+                }
+            }
+        }
+        .circle{
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            display: inline-flex;
+        }
+        .listings-grid{
+            .listings-grid-element{
+                width: 33%;
+                margin-top: 1rem;
+                .image{
+                    height: 240px;
+                    overflow: hidden;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text-lower{
+                padding: 0.6rem 0;
+                span{
+                    color: var(--color-greyDarker);
+                }
+            }
+            .text{  
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 1rem;
+                padding: 1rem 0;
+                h3{
+                    font-weight: 400;
+                    margin-bottom: 0.3;
+                    margin-top: 0;
+                }
+                span{
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                }
+                .rating{
+                    margin-left: auto;
+                    span{
+                        height: 40px;
+                        width: 40px;
+                        background-color: var(--color-grey);
+                        color: #000;
+                        font-size: 1rem;
                     }
                 }
             }
