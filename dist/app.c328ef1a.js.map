@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["window","onload","listings","document","get"],"mappings":"AAAAA,MAAM,CAACC,MAAP,GAAgB,YAAM;AAClB,MAAMC,QAAQ,GAAGC,QAAQ,CAACC,GAA1B;AACH,CAFD","file":"app.c328ef1a.js","sourceRoot":"..","sourcesContent":["window.onload = () => {\n    const listings = document.get\n}"]}
